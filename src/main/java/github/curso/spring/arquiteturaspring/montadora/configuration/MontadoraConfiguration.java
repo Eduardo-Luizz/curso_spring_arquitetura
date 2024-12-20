@@ -4,6 +4,7 @@ import github.curso.spring.arquiteturaspring.montadora.Motor;
 import github.curso.spring.arquiteturaspring.montadora.TipoMotor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class MontadoraConfiguration {
@@ -20,6 +21,7 @@ public class MontadoraConfiguration {
     }
 
     @Bean(name = "motorEletrico")
+    @Primary //Informa que este é o bean primário evitando o erro múltiplos de beans
     public Motor motorEletrico() {
         var motor = new Motor();
         motor.setCavalos(500);
