@@ -5,6 +5,7 @@ import github.curso.spring.arquiteturaspring.montadora.Chave;
 import github.curso.spring.arquiteturaspring.montadora.ChevroletOnix;
 import github.curso.spring.arquiteturaspring.montadora.Motor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/carros")
 public class TesteFabricaController {
 
+    @Qualifier("motorEletrico")
     @Autowired
     private Motor motor;
 
