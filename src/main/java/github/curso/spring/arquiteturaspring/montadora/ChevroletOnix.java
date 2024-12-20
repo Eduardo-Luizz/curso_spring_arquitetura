@@ -8,6 +8,6 @@ public class ChevroletOnix extends Carro {
         super(motor);
         setModelo("Onix");
         setCor(Color.BLACK);
-        setMontadora(Montadora.CHEVROOLET);
+        setMontadora(Montadora.CHEVROLET);
     }
 }

@@ -1,6 +1,7 @@
 package github.curso.spring.arquiteturaspring.montadora;
 
 public class Chave {
+
     private Montadora montadora;
     private String tipo;
 

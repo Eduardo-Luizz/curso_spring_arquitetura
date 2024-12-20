@@ -1,6 +1,4 @@
 package github.curso.spring.arquiteturaspring.montadora;
 
-public enum Montadora {
-    CHEVROLET,
-    TOYOTA
+public record CarroStatus(String mensagem) {
 }
