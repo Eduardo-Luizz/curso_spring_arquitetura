@@ -4,10 +4,12 @@ import github.curso.spring.arquiteturaspring.todos.TodoEntity;
 import github.curso.spring.arquiteturaspring.todos.TodoValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.WebApplicationContext;
 
+@Lazy(false) // Por padrão é true e significa que só é instaciado quando é chamado, só faz sentido quando por padrão são todos true
 @Component
 @Scope(BeanDefinition.SCOPE_SINGLETON)
 //@Scope(WebApplicationContext.SCOPE_APPLICATION) para scopos que são da web
